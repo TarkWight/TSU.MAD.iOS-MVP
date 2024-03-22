@@ -11,6 +11,9 @@
 		B00FC0232BABFCD200980D31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FC0222BABFCD200980D31 /* ContentView.swift */; };
 		B00FC0252BABFCD300980D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FC0242BABFCD300980D31 /* Assets.xcassets */; };
 		B00FC0282BABFCD300980D31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FC0272BABFCD300980D31 /* Preview Assets.xcassets */; };
+		B0ECB1622BAD2AA1003B4D57 /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1612BAD2AA1003B4D57 /* PhoneNumberFormatter.swift */; };
+		B0ECB1642BAD2B43003B4D57 /* PhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1632BAD2B43003B4D57 /* PhoneNumberPresenter.swift */; };
+		B0ECB1662BAD2B5B003B4D57 /* PhoneNumberValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1652BAD2B5B003B4D57 /* PhoneNumberValidationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		B00FC0222BABFCD200980D31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B00FC0242BABFCD300980D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00FC0272BABFCD300980D31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0ECB1612BAD2AA1003B4D57 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		B0ECB1632BAD2B43003B4D57 /* PhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberPresenter.swift; sourceTree = "<group>"; };
+		B0ECB1652BAD2B5B003B4D57 /* PhoneNumberValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		B00FC01F2BABFCD200980D31 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				B0ECB15D2BAD2996003B4D57 /* Model */,
+				B0ECB15E2BAD299D003B4D57 /* View */,
+				B0ECB15F2BAD29A2003B4D57 /* Presenter */,
+				B0ECB1602BAD29A8003B4D57 /* Servise */,
 				B00FC0202BABFCD200980D31 /* MVPApp.swift */,
-				B00FC0222BABFCD200980D31 /* ContentView.swift */,
 				B00FC0242BABFCD300980D31 /* Assets.xcassets */,
 				B00FC0262BABFCD300980D31 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				B00FC0272BABFCD300980D31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0ECB15D2BAD2996003B4D57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB1612BAD2AA1003B4D57 /* PhoneNumberFormatter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0ECB15E2BAD299D003B4D57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B00FC0222BABFCD200980D31 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0ECB15F2BAD29A2003B4D57 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB1632BAD2B43003B4D57 /* PhoneNumberPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B0ECB1602BAD29A8003B4D57 /* Servise */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB1652BAD2B5B003B4D57 /* PhoneNumberValidationService.swift */,
+			);
+			path = Servise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0ECB1642BAD2B43003B4D57 /* PhoneNumberPresenter.swift in Sources */,
 				B00FC0232BABFCD200980D31 /* ContentView.swift in Sources */,
+				B0ECB1662BAD2B5B003B4D57 /* PhoneNumberValidationService.swift in Sources */,
+				B0ECB1622BAD2AA1003B4D57 /* PhoneNumberFormatter.swift in Sources */,
 				B00FC0212BABFCD200980D31 /* MVPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
